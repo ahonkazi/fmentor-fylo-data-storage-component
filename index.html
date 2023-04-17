@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <main class="min-h-screen px-8  flex items-center justify-center">
+        <div class="site__container items-center gap-4 md:gap-8 flex w-full md:w-fit flex-col lg:flex-row">
+            <div class="left__box rounded-lg rounded-tr-half w-full sm:w-[352px] p-[40px] bg-dark-blue">
+                <div class="left__box-header">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="h-[40px]"></div>
+                <div class="flex gap-4">
+                    <div class="icon bg-verydark-blue px-4 py-3 rounded-lg">
+                        <img src="./images/icon-document.svg" alt="">
+                    </div>
+                    <div class="icon bg-verydark-blue px-4 py-3 rounded-lg">
+                        <img src="./images/icon-folder.svg" alt="">
+                    </div>
+                    <div class="icon bg-verydark-blue px-4 py-3 rounded-lg">
+                        <img src="./images/icon-upload.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right__progress  rounded-lg bg-dark-blue h-fit w-full md:w-[450px] lg:w-[540px]
+             md:py-[48px] md:px-[40px] px-[32px] py-[32px]">
+                <div class="flex md:block relative flex-col justify-center items-center">
+                    <!-- top box -->
+
+                    <div class="absolute top__box-wrapper  w-fit  font-bold">
+                        <div
+                            class="top__box justify-between items-center gap-3 px-8 py-4  rounded-[10px]  md:rounded-br-none bg-white flex">
+
+                            <h1 class="text-5xl text-dark-blue ">185</h1>
+                            <p class="text-GrayishBlue uppercase w-[50px] text-sm">gb left</p>
+                        </div>
+                    </div>
+                    <p class="text-GrayishBlue font-medium">You've used <span class="text-paleBlue font-bold">815 GB
+                        </span>of your storage </p>
+                    <div class="h-4 md:h-5"></div>
+                    <div class="progress-wrapper w-full px-[1px] py-[3px] md:py-[2px]  bg-verydark-blue rounded-lg">
+                        <div class="progress-line p-[1px] relative h-4 md:h-3.5 rounded-lg w-[81.5%]">
+
+                            <span
+                                class="absolute right-[1.5px] top-1/2 mt-[0.25px]  -translate-y-1/2 h-[12px] w-[12px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                    <div class="h-4 md:h-5"></div>
+
+                    <div class="flex text-base font-semibold text-paleBlue w-full justify-between">
+                        <p>0GB</p>
+                        <p>1000GB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center bg-slate-200">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/ahonkazi"><span class="text-rose-500">Ahon khan</span></a>.
+        </div>
+    </footer>
+</body>
+
+</html>
